@@ -1,0 +1,550 @@
+/*
+    COLOUR PALETTE
+
+ dark blue:   #084272;
+ light blue:  #E5F5FA;
+ medium blue: #005FAA;
+ light grey:  #F5F5F5;
+ green:       #6ba23f;
+
+*/
+
+
+
+/* UNIVERSAL STYLES & TYPOGRAPHY */
+
+.index, .your-home, .community {
+    font-family: Calibri, sans-serif;
+    font-size: 1.125rem;
+}
+
+
+header, h1, h2 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #084272;  
+}
+
+.nav-top ul {
+    display: flex;
+    justify-content:space-between;
+}
+
+.nav-top li {
+    background-color: #084272;
+    text-transform: uppercase;
+    border-left: 0.5px solid white;
+    border-right: 0.5px solid white;
+    width: 25%;
+}
+
+.nav-top a {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.4rem;
+    height: 100%;
+}
+
+.nav-top a:hover {
+    background-color: #6ba23f;
+}
+
+.main-menu {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    margin: 0 2rem 2rem 2rem; 
+}
+
+.main-menu ul {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.main-menu a {
+    color: #084272;
+}
+
+.main-menu li a:hover {
+    color: #6ba23f;
+    text-decoration: underline;
+}
+
+.home-img {
+    height: 14vh;
+    background: url('../img/banner-wind-sm.webp') center top / cover no-repeat;
+}
+
+.your-home-img {
+    height: 14vh;
+    background: url('../img/banner-your-home-sm.webp') center top / cover no-repeat;
+}
+
+.comm-img {
+    height: 14vh;
+    background: url('../img/banner-community-sm.webp') center / cover no-repeat;
+}
+
+h1 {
+    font-size: 2.25rem;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.875rem;
+}
+
+h3 {
+    font-size: 2.125rem;
+}
+
+footer {
+    background-color: #E5F5FA;
+    text-align: left;
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+}
+
+footer div {
+    display: flex;
+    flex-flow: column;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    color: #084272; 
+}
+
+footer a:hover {
+    color: #6ba23f;
+}
+
+
+
+/* MOBILE LAYOUT */
+
+
+
+/* HOME PAGE */
+
+.index {
+    text-align: center;
+}
+
+.index-menu {
+    background-color: #E5F5FA;
+    padding: 1.25rem 1.5rem 0 1.5rem;
+}
+
+.index-menu ul {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-menu li {
+    background-color: white;
+    border: 1px solid #F5F5F5;
+    width: 46.7%;
+    margin-bottom: 1.25rem;
+}
+
+.index-menu a {
+    display: block;
+    color: #005FAA;
+    padding: 0.5rem;
+}
+
+.index-menu a:hover {
+    background-color: #084272;
+    color: white;
+}
+
+.index main {
+    margin: 0 1.5rem;
+}
+
+.numbers h2 {
+    text-transform: uppercase;
+}
+
+.index main img {
+    padding-bottom: 1rem;
+}
+
+.index section a {
+    display: block;
+    text-decoration: none;
+    background-color: #084272;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid #084272;
+}
+
+.index section a:hover {
+    background-color: #E5F5FA;
+    color: #084272;
+    border: 1px solid #084272;
+}
+
+.index footer {
+    margin-top: 2rem;
+}
+
+
+
+
+/* YOUR HOME */
+
+.your-home main section {
+    margin: 0 1.5rem;
+}
+
+
+.tile-group {
+   display: flex;
+   flex-flow: wrap;
+   justify-content: space-between;
+   align-items: center;
+   margin: 1.5rem;
+}
+
+.tiles {
+    display: flex;
+    flex-flow: column;
+    width: 48%;
+    margin-top: 1.5rem;
+}
+
+.tiles a {
+    display: block; 
+    background-color: #084272;
+    color: white;
+    padding: 1rem;
+}
+
+.tiles a:hover {
+    background-color: #005FAA;
+    color: white;
+}
+
+.your-home h2 {
+    text-transform: uppercase;
+}
+
+.home img , .home-1 img {
+    margin: auto;
+}
+
+.inner-link {
+    color: #005FAA;
+}
+
+.inner-link:hover {
+    color: #6ba23f;
+}
+.your-home aside p {
+    text-transform: uppercase;
+}
+
+.your-home aside {
+    background-color: #F5F5F5;
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+}
+
+.help div {
+    background-color: white;
+    border: 1px solid lightgrey;
+    padding: 1rem 0 2rem 0;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.help div a {
+    color: #005FAA;
+}
+
+.help div a:hover {
+    color: #6ba23f;
+}
+
+
+/* COMMUNITY */
+
+.community main section {
+    margin: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.tile-comm {
+    display: flex;
+    flex-flow: column; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+.tile {
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 1.5rem;
+}
+
+.tile a {
+    background-color: #084272;
+    color: white;
+    display: block;
+    padding: 1rem;
+}
+
+.tile-comm a:hover {
+    background-color: #005FAA;
+}
+
+.community aside {
+    background: url('../img/building-stronger-sm.webp') center top / cover no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    
+}  
+.banner-bottom {
+    display: flex;
+    flex-flow: wrap;
+}
+
+.banner-text h2 {
+    text-transform: uppercase;
+}
+
+.banner-text {
+    background-color: rgba(255, 255, 255, 0.85);
+    margin: 1.5rem;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    max-width: 550px;
+}
+
+.banner-text a {
+    color: #005FAA;
+}
+
+.banner-text a:hover {
+    color: #6ba23f;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+
+    .main-menu {
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto 2rem;
+    }
+
+    .main-menu li {
+        padding-left: 1rem;
+    }
+
+    .home-img {
+        height: 20vh;
+        background: url('../img/banner-wind-md.webp') center top / cover no-repeat;
+    }
+
+    .your-home-img {
+        height: 20vh;
+        background: url('../img/banner-your-home-md.webp') center top / cover no-repeat;
+    }
+
+    .comm-img {
+        height: 20vh;
+        background: url('../img/banner-community-md.webp') center / cover no-repeat;
+    }
+
+
+    /* HOME PAGE */
+
+    .index-menu li {
+        width: 32.5%;
+    }
+
+    .index main section {
+        display: flex;
+        margin-top: 1.5rem;
+    }
+
+    .index main section a {
+        display: inline-block;
+    }
+
+    .stats {
+        width: 80%; 
+        border: 1px solid #E5F5FA;
+        padding: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .numbers {
+        background-color: #F5F5F5;
+        border: 1px solid #E5F5FA;
+        padding: 1.5rem;   
+    }
+
+
+
+    /* YOUR HOME */
+
+    .tiles {
+        width: 30%;
+    }
+
+    .tiles div {
+        order: -1;
+    }
+
+    .home, .home-1 {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .home div , .home-1 div {
+        width: 48%;
+    }
+
+    .home p, .home-1 p {
+        margin-top: 0;
+    }
+
+    .order-item {
+        order: 1;
+    }
+
+    .help {
+        display: flex;
+        justify-content: space-between;
+   }
+
+   .help div {
+        width: 30%;
+   }
+
+
+
+    /* COMMUNITY */
+
+    .tile-comm {
+        flex-flow: row;
+    }
+
+    .tile {
+        width: 30%;
+    }
+
+    .tile div {
+        order: -1;
+    }
+  
+    .community aside {
+       background: url('../img/building-stronger-md.webp') center top / cover no-repeat;
+    }  
+
+    footer div {
+        flex-flow: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer li {
+        padding-left: 1rem;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+
+
+    .nav-top ul, .index main, .main-menu, .index-menu ul, .your-home main section, .tile-group, .help, .community main section, .tile-comm, .banner-bottom, footer div {
+        width: 1000px;
+        margin: auto;
+    }
+    .nav-top ul {
+        justify-content: flex-end;
+    }
+
+    .nav-top li {
+        width: auto;
+    }
+
+    .home-img {
+        height: 40vh;
+        background: url('../img/banner-wind-lg.webp') center top / cover no-repeat;
+    }
+
+    .your-home-img {
+        height: 40vh;
+        background: url('../img/banner-your-home-lg.webp') center top / cover no-repeat;
+    }
+
+    .comm-img {
+        height: 40vh;
+        background: url('../img/banner-community-lg.webp') center / cover no-repeat;
+    }
+
+    /* HOME PAGE */
+
+
+    .index-menu li {
+        width: 15.2%;
+    } 
+
+    .index-menu a {
+        padding: 0.75rem;
+    }
+
+    .stats {
+        width: 100%;
+    }
+
+
+    /* YOUR PAGE */
+
+    .home div , .home-1 div {
+        width: 50%;
+    }
+
+
+
+
+    /* COMMUNITY */
+
+    .community aside {
+        background: url('../img/building-stronger-lg.webp') center top / cover no-repeat;
+    }
+
+    .banner-bottom {
+        justify-content: flex-end;
+    }
+
+    .banner-text {
+        margin: 1.5rem 0;
+    }
+}
